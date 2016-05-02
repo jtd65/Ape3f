@@ -4,7 +4,7 @@
   <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
   <script src="//code.jquery.com/jquery-1.10.2.js"></script>
   <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-  <link rel="stylesheet" href="/resources/demos/style.css">
+  <link rel="stylesheet" href="//jqueryui.com/jquery-wp-content/themes/jqueryui.com/style.css">
   <script>
   $(function() {
     $( "#accordion" ).accordion();
@@ -22,9 +22,10 @@
 <%= link_to 'Edit', edit_plan_path(@plan) %> |
 <%= link_to 'Back', plans_path %>
 
+<div id="accordion">
+
 <% @plan.terms.each do |term| %>
 
-<div id="accordion">
   <h3>Section 1</h3>
   <div>
     <p>
@@ -34,6 +35,7 @@
     odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
     </p>
   </div>
- </div>
 
 <% end %>
+
+</div>

@@ -37,9 +37,9 @@ term2 = Term.new
 
 #give joe a couple of plans
 
-Plan.create(user_id: user1.id, name: "Plan1")
+plan1 = Plan.create(user_id: user1.id, name: "Plan1")
 
 Plan.create(user_id: user1.id, name: "Plan2")
 
-Plan1.terms = term1;
-Plan2.term = term2;
+plan1.terms = term1;
+Plan1.terms = term2;
